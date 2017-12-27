@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+/**
+Font Awesome
+ */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('font-awesome/fontawesome-webfont.eot?v=4.4.0');
+    src: url('font-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('font-awesome/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('font-awesome/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('font-awesome/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('font-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+Maven Pro
+ */
+/* latin-ext */
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Maven Pro Regular'), local('MavenPro-Regular'), url(../font/yylnvFPTXAd6yQPV1EKDlRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family:'Maven Pro';
+    font-style:normal;
+    font-weight:400;
+    src:local('Maven Pro Regular'), local('MavenPro-Regular'), url(../font/MG9KbUZFchDs94Tbv9U-pVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/**
+Baboo Thambi
+ */
+/* tamil */
+@font-face {
+    font-family: 'Baloo Thambi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baloo Thambi Regular'), local('BalooThambi-Regular'), url(../font/qXK3dZIeU-O-HruaN5cK04SLh-MsTnNLt68IoFS3dKQ.woff2) format('woff2');
+    unicode-range: U+0964-0965, U+0B82-0BFA, U+200B-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Baloo Thambi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baloo Thambi Regular'), local('BalooThambi-Regular'), url(../font/qXK3dZIeU-O-HruaN5cK0z0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family:'Baloo Thambi';
+    font-style:normal;
+    font-weight:400;
+    src:local('Baloo Thambi Regular'), local('BalooThambi-Regular'), url(../font/qXK3dZIeU-O-HruaN5cK0-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+
+/**
+Global
+ */
+html {
+    height:100%;
+}
+body {
+    background:linear-gradient(135deg, black, 71%, #646464);
+    margin:0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+/**
+Footer - for dev purposes
+ */
+#footer {
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:0.7em;
+}

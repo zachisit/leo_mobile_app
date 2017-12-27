@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Leo - Mobile App</name>
+    <description>
+        TODO:fill in description
+    </description>
+    <author email="zach@zachis.it" href="https://efsnetworks.com">
+        zachis.it
+    </author>
+    <plugin name="cordova-plugin-media" source="npm" />
+    <plugin name="cordova-plugin-nativeaudio" source="npm" />
+    <!-- Enable all requests, inline styles, and eval() -->
+    <content src="index.html" />
+    <preference name="orientation" value="portrait" />
+    <icon src="/img/app-icon/icon.jpg" /><!--@TODO:replace512x512px resolution-->
+    <access origin="*" />
+</widget>
