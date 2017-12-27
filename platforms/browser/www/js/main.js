@@ -9,17 +9,29 @@ $(document).ready(function() {
     playSound();
 });
 
+function audioFiles() {
+    var files = [
+        "../sounds/ScruvyRat.mp3",
+        "../sounds/test.mp3"
+    ];
+
+    var randomAudio = files[Math.floor(Math.random()*files.length)];
+
+    console.log(randomAudio);
+    return randomAudio;
+}
 
 function playSound() {
-    console.log('playSound started')
-    var obj = document.createElement("audio");
-    obj.setAttribute("src", ".../sounds/ScurvyRat.mp4");
-    $.get();
+    console.log('playSound started');
 
     $('#make_sound').on('click', (function() {
+        var obj = document.createElement("audio");
+        obj.setAttribute("src", audioFiles());
+        $.get();
 
         obj.play();
     }));
+
 }
 
 /**

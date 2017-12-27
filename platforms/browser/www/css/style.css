@@ -77,6 +77,27 @@ a {
     color:white;
     text-decoration:none;
 }
+.row {
+    position:relative;
+    float:left;
+    width:100%;
+    margin:4em 0;
+    height:300px;
+}
+#make_sound {
+    background:green;
+    color:white;
+    height:100px;
+    width:100px;
+    border-radius:10em;
+    border:none;
+    outline:none;
+    margin:auto;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
 /**
 Footer - for dev purposes
  */
