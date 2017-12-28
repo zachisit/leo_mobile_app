@@ -22,14 +22,12 @@ function audioFiles() {
 }
 
 function playSound() {
-    console.log('playSound started');
-
     $('#make_sound').on('click', (function() {
-        var obj = document.createElement("audio");
-        obj.setAttribute("src", audioFiles());
-        $.get();
+        audioClip = new Media(audioFiles());
 
-        obj.play();
+        audioClip.play();
+
+
     }));
 
 }
