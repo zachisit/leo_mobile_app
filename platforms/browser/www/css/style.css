@@ -97,6 +97,12 @@ a {
     left:0;
     right:0;
 }
+#make_sound:active, #make_sound:focus, #make_sound:hover {
+    background:pink;
+}
+.playing {
+    background:pink !important;
+}
 
 /**
 Footer - for dev purposes
