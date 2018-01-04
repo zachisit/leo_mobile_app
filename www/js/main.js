@@ -16,20 +16,22 @@ function audioFiles() {
     var p = window.location.pathname;
     var root = p.substring(0, p.lastIndexOf('/')) + localPath;
 
-    //window.alert(p);
-    //window.alert(root);
     var files = [
         root + "ScruvyRat.mp3",
         root + "test.mp3"
     ];
 
-    var randomAudio = files[Math.floor(Math.random()*files.length)];
-
-    return randomAudio;
+    return files[Math.floor(Math.random()*files.length)];
 }
 
 function playSound() {
     $('body').click(function(evt){
+        var $makeSoundButton = $('#make_sound');
+
+        //removeActiveClass();
+        $makeSoundButton.removeClass('active');
+
+
         if(!$(evt.target).is('#make_sound')) {
             if(audioClip) audioClip.stop();
         } else {
@@ -37,42 +39,14 @@ function playSound() {
             if (Media.MEDIA_RUNNING) {
                 if(audioClip) audioClip.stop();
                 audioClip = new Media(audioFiles());
-                //audioClip = new Media(audioFiles(), null, onError);
+                $makeSoundButton.addClass('active');
             }
 
-            /*function onError(error) {
-             alert('code: '    + error.code    + '\n' +
-             'message: ' + error.message + '\n');
-             }*/
-            //$(this).toggleClass('playing');
             audioClip.play();
         }
     });
-
-    /*$('#make_sound').on('click', (function() {
-
-        //window.alert(window.location.pathname);
-        //var what = $(this);
-        //showToggleImage(what);
-
-        //window.alert(audioFiles());
-
-        if (Media.MEDIA_RUNNING) {
-            if(audioClip) audioClip.stop();
-            audioClip = new Media(audioFiles());
-            //audioClip = new Media(audioFiles(), null, onError);
-        }
-
-        /*function onError(error) {
-            alert('code: '    + error.code    + '\n' +
-                'message: ' + error.message + '\n');
-        }*/
-        //$(this).toggleClass('playing');
-        //audioClip.play();
-    /*}));*/
 }
 
 function showToggleImage(what) {
-
     what.toggleClass('playing');
 }

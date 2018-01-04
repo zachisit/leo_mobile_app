@@ -85,10 +85,10 @@ a {
     height:300px;
 }
 #make_sound {
-    background:green;
+    background:url(../img/make_sound_normal.png) no-repeat;
     color:white;
-    height:100px;
-    width:100px;
+    height:224px;
+    width:224px;
     border-radius:10em;
     border:none;
     outline:none;
@@ -96,9 +96,11 @@ a {
     position:absolute;
     left:0;
     right:0;
+    text-indent:-9999px;
+    cursor:pointer;
 }
-#make_sound:active, #make_sound:focus, #make_sound:hover {
-    background:pink;
+.active {
+    background:url(../img/make_sound_active.png) no-repeat !important;
 }
 .playing {
     background:pink !important;
