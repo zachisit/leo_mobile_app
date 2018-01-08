@@ -18,7 +18,29 @@ function audioFiles() {
 
     var files = [
         root + "ScruvyRat.mp3",
-        root + "test.mp3"
+        root + "exit-left.mp3",
+        root + "didnt-do-it.mp3",
+        root + "911.mp3",
+        root + "beelzibub.mp3",
+        root + "boobs.mp3",
+        root + "braunsweiger.mp3",
+        root + "Breasteses.mp3",
+        root + "buggers.mp3",
+        root + "fleegles.mp3",
+        root + "furburgers.mp3",
+        root + "ildargit.mp3",
+        root + "alive.mp3",
+        root + "test.mp3",
+        root + "rat-turds.mp3",
+        root + "sewer-gas.mp3",
+
+
+
+
+
+
+
+
     ];
 
     return files[Math.floor(Math.random()*files.length)];
@@ -34,6 +56,7 @@ function playSound() {
 
         if(!$(evt.target).is('#make_sound')) {
             if(audioClip) audioClip.stop();
+            $makeSoundButton.removeClass('active');
         } else {
             //event handling code
             if (Media.MEDIA_RUNNING) {
