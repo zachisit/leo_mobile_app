@@ -103,9 +103,7 @@ a {
     animation:shake 0.5s;
     animation-iteration-count:infinite;
 }
-.playing {
-    background:pink !important;
-}
+
 /**
 shake
  */

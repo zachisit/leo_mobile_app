@@ -61,7 +61,9 @@ function playSound() {
             //event handling code
             if (Media.MEDIA_RUNNING) {
                 if(audioClip) audioClip.stop();
-                audioClip = new Media(audioFiles());
+                audioClip = new Media(audioFiles(), function(){//callback
+                    $makeSoundButton.removeClass('active');
+                });
                 $makeSoundButton.addClass('active');
             }
 
