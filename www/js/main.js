@@ -33,14 +33,8 @@ function audioFiles() {
         root + "test.mp3",
         root + "rat-turds.mp3",
         root + "sewer-gas.mp3",
-
-
-
-
-
-
-
-
+        root + "sharted.mp3",
+        root + "fun-bags.mp3"
     ];
 
     return files[Math.floor(Math.random()*files.length)];
